@@ -1,0 +1,43 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    display: list-item;
+    background-color: #222;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: #222;
+}
+
+.homelogo {
+    position: relative;
+}
+
+.homelogo:hover {
+    filter: invert();
+}
+
+.homelogoImage {
+    text-align: left;
+    width:;
+    height: 15%;
+}
+
+/* Change the color of the title */
+.title h1 {
+    color: #ddd;
+    text-align: center;
+    font-size: inherit;
+}
