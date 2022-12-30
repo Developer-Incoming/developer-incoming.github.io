@@ -1,3 +1,16 @@
+body {
+    background-color: #3B2929;
+}
+
+p {
+    color: #BABABA;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #BABABA;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     display: list-item;
@@ -8,7 +21,7 @@
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #f0f0f0;
+    color: #BABABA;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,6 +57,10 @@
     color: #222;
 } */
 
+#Main {
+    padding: 0% 7.5%;
+}
+
 .homelogo {
     float: left;
     width: 100%;
@@ -64,23 +81,24 @@
 
 
 @font-face {
-    font-family: sans-serif;
+    font-family: nugosans;
     src: url("./NugoSansLight-9YzoK.ttf");
 }
 
 /* Change the color of the title */
-.title h1 {
+.title h1, .subtitle h2 {
     color: #ddd;
     text-align: center;
     font-size: inherit;
 }
 
-img.discord-contact {
-    src: url("./Assets/Discord.svg");
-    alt: "Discord";
+img.social-contact {
+    width: 2%;
+    height: 2%;
+    position: fixed;
+    filter: invert();
 }
 
-img.telegram-contact {
-    src: url("./Assets/Telegram.svg");
-    alt: "Telegram";
+img.social-contact:hover {
+    filter: none;
 }
