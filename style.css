@@ -39,6 +39,13 @@
     height: 1%;
 }
 
+
+@font-face {
+    font-family: nugosans;
+
+    src: url("./NugoSansLight-9YzoK.ttf");
+}
+
 /* Change the color of the title */
 .title h1 {
     color: #ddd;
