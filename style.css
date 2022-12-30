@@ -21,6 +21,29 @@
     color: #222;
 }
 
+/* Add a background color to the bottom navigation */
+.botnav {
+    display: list-item;
+    background-color: #222;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+/* .botnav a {
+    float: left;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 100%;
+} */
+
+/* Change the color of links on hover */
+/* .botnav a:hover {
+    background-color: #ddd;
+    color: #222;
+} */
+
 .homelogo {
     float: left;
     width: 100%;
@@ -41,8 +64,7 @@
 
 
 @font-face {
-    font-family: nugosans;
-
+    font-family: sans-serif;
     src: url("./NugoSansLight-9YzoK.ttf");
 }
 
@@ -51,4 +73,14 @@
     color: #ddd;
     text-align: center;
     font-size: inherit;
+}
+
+img.discord-contact {
+    src: url("./Assets/Discord.svg");
+    alt: "Discord";
+}
+
+img.telegram-contact {
+    src: url("./Assets/Telegram.svg");
+    alt: "Telegram";
 }

@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "C:\\Users\\alzam\\Documents\\GitHub\\developer-incoming.github.io\\index.html",
+            "name": "Launch Chrome",
+            "url": "${workspaceFolder}\\index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
