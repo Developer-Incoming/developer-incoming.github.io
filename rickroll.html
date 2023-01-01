@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هل انت روبوت؟</title>
+</head>
+<body>
+    <div id="container">
+        <header id="security check" style="color: dodgerblue; text-decoration: underline; font-size: large;">هل أنت روبوت؟</header>
+    </div>
+
+    <audio id="theme" src="./Assets/Audio/funny.mp3" autoplay></audio>
+
+    <script>
+        var context = new AudioContext();
+
+        // One-liner to resume playback when user interacted with the page.
+        function themePlayer() {
+            context.resume().then(() => {
+                var themeSong = document.getElementById("theme")
+                themeSong.volume = 0.05;
+                themeSong.loop = true;
+                themeSong.play();
+                
+                document.getElementById("security check").removeEventListener("click", themePlayer);
+                document.getElementById("container").remove();
+                document.body.style.backgroundColor = "black"
+            });
+        }
+        
+        document.getElementById("security check").addEventListener("click", themePlayer);
+    </script>
+
+</body>
+</html>

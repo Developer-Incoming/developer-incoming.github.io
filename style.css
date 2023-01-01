@@ -1,27 +1,129 @@
+::-moz-selection {
+    /* Code for Firefox */
+    color: #3B2929;
+    background: #BABABA7F;
+}
+
+::selection {
+    color: #3B2929;
+    background: #BABABA7F;
+}
+
+body {
+    background-color: #3B2929;
+    background-image: url("./DI reflect-repeat.png");
+    background-repeat: 5;
+    background-blend-mode: overlay;
+    background-position: 15%;
+    background-size: 25%;
+}
+
+p {
+    font-family: nugosans;
+    line-height: 130%;
+    color: #BABABA;
+}
+
+p.info {
+    font-size: small;
+    font-weight: lighter;
+}
+
+div a {
+    font-family: nugosans;
+    text-decoration-line: none;
+    color: #29C429;
+}
+
+div.section a.title {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: nugosans;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #BABABA;
+}
+
+li {
+    color: #29C429;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     display: list-item;
     background-color: #222;
     overflow: hidden;
+    border-radius: 6px;
+    /* background-image: url("./DI repeat.png");
+    background-repeat: 5;
+    background-size: 50%;
+    background-blend-mode: overlay;
+    background-position: 15%; */
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+    font-family: nugosans;
+    float: left;
+    color: #BABABA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #DDD;
+    color: #222;
+    font-weight: bold;
+}
+
+/* Add a background color to the bottom navigation */
+.contacts-div {
+    background-color: #222;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 100%;
+}
+
+.contacts {
+    text-align: center;
+
+}
+
+/* Style the links inside the navigation bar */
+/* .botnav a {
     float: left;
     color: #f0f0f0;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-}
+    font-size: 100%;
+} */
 
 /* Change the color of links on hover */
-.topnav a:hover {
+/* .botnav a:hover {
     background-color: #ddd;
     color: #222;
+} */
+
+.main {
+    padding: 0% 7.5%;
+}
+
+.section {
+    background-color: #332323;
+    padding: 1.5% 5%;
+    border-radius: 6px;
 }
 
 .homelogo {
+    float: left;
+    width: 30%;
+    height: fit-content;
     position: relative;
 }
 
@@ -30,14 +132,34 @@
 }
 
 .homelogoImage {
+    float: left;
     text-align: left;
-    width:;
-    height: 15%;
+    width: 15%;
+    height: 11%;
+}
+
+
+@font-face {
+    font-family: nugosans;
+    src: url("./Assets/NugoSansLight-9YzoK.ttf");
 }
 
 /* Change the color of the title */
-.title h1 {
-    color: #ddd;
+.title h1,
+.subtitle h2 {
+    font-family: nugosans;
+    color: #DDD;
     text-align: center;
     font-size: inherit;
+}
+
+img.social-contact {
+    width: 2%;
+    height: 2%;
+    padding: 0% 0.5%;
+    filter: invert();
+}
+
+img.social-contact:hover {
+    filter: none;
 }
