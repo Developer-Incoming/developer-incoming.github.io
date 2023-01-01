@@ -1,5 +1,21 @@
+::-moz-selection {
+    /* Code for Firefox */
+    color: #3B2929;
+    background: #BABABA7F;
+}
+
+::selection {
+    color: #3B2929;
+    background: #BABABA7F;
+}
+
 body {
     background-color: #3B2929;
+    background-image: url("./DI reflect-repeat.png");
+    background-repeat: 5;
+    background-blend-mode: overlay;
+    background-position: 15%;
+    background-size: 25%;
 }
 
 p {
@@ -16,7 +32,7 @@ p.info {
 div a {
     font-family: nugosans;
     text-decoration-line: none;
-    color: #29c429;
+    color: #29C429;
 }
 
 div.section a.title {
@@ -32,7 +48,7 @@ h2 {
 }
 
 li {
-    color: #29c429;
+    color: #29C429;
 }
 
 /* Add a black background color to the top navigation */
@@ -41,6 +57,11 @@ li {
     background-color: #222;
     overflow: hidden;
     border-radius: 6px;
+    /* background-image: url("./DI repeat.png");
+    background-repeat: 5;
+    background-size: 50%;
+    background-blend-mode: overlay;
+    background-position: 15%; */
 }
 
 /* Style the links inside the navigation bar */
@@ -55,17 +76,17 @@ li {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #DDD;
     color: #222;
     font-weight: bold;
 }
 
 /* Add a background color to the bottom navigation */
-.botnav {
+.contacts-div {
     background-color: #222;
     overflow: hidden;
     border-radius: 6px;
-    margin-top: 20%;
+    margin-top: 100%;
 }
 
 .contacts {
@@ -101,8 +122,8 @@ li {
 
 .homelogo {
     float: left;
-    width: 100%;
-    height: auto;
+    width: 30%;
+    height: fit-content;
     position: relative;
 }
 
@@ -113,8 +134,8 @@ li {
 .homelogoImage {
     float: left;
     text-align: left;
-    width: 5%;
-    height: 1%;
+    width: 15%;
+    height: 11%;
 }
 
 
@@ -124,9 +145,10 @@ li {
 }
 
 /* Change the color of the title */
-.title h1, .subtitle h2 {
+.title h1,
+.subtitle h2 {
     font-family: nugosans;
-    color: #ddd;
+    color: #DDD;
     text-align: center;
     font-size: inherit;
 }
