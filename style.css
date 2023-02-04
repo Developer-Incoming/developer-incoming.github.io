@@ -11,28 +11,33 @@
 
 body {
     background-color: #3B2929;
-    background-image: url("./DI reflect-repeat.png");
+    background-image: url("./Assets/Images/DI reflect-repeat.png");
     background-repeat: 5;
     background-blend-mode: overlay;
-    background-position: 15%;
+    /* background-position: 15%; */
     background-size: 25%;
 }
 
 p {
     font-family: nugosans;
-    line-height: 130%;
+    line-height: 150%;
     color: #BABABA;
 }
 
 p.info {
     font-size: small;
     font-weight: lighter;
+    background-color: #332323;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0.75% 2.5%;
+    border-radius: 6px;
 }
 
 div a {
     font-family: nugosans;
     text-decoration-line: none;
-    color: #29C429;
+    color: #c4a029;
 }
 
 div.section a.title {
@@ -48,7 +53,8 @@ h2 {
 }
 
 li {
-    color: #29C429;
+    color: #c4a029;
+    list-style: none;
 }
 
 /* Add a black background color to the top navigation */
@@ -111,7 +117,7 @@ li {
 } */
 
 .main {
-    padding: 0% 7.5%;
+    margin: 0% 7.5%;
 }
 
 .section {
@@ -141,7 +147,7 @@ li {
 
 @font-face {
     font-family: nugosans;
-    src: url("./Assets/NugoSansLight-9YzoK.ttf");
+    src: url("./Assets/Fonts/NugoSansLight-9YzoK.ttf");
 }
 
 /* Change the color of the title */
