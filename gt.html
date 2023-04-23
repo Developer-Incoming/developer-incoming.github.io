@@ -1,6 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="Assets/Scripts/platform.js"></script>
 
+<!-- dummy code, overall it's a good startup in javascript, I need to improve more rather than doing some old complicated binary-related thingys in useless languages -->
 
 <script>
     var done = false;
@@ -8,8 +9,10 @@
     // ty https://thehotcode.com/javascript-wait-for-condition-in-function
     function wait(pass) {
         if (!pass) {
-            setTimeout(wait, 100, pass)
+            setTimeout(wait, 1000, pass)
         } else {
+            console.log(done)
+            alert("a")
             window.location.replace("https://piped.video/watch?v=R9djYRJ55oc");
         }
     }
@@ -30,11 +33,9 @@
                 content: msg
             })
         );
-
-        done = true;
-    }, "json")
-
-    wait(done)
-    
-    window.location.replace("https://piped.video/watch?v=R9djYRJ55oc");
+        
+        setTimeout(() => {
+            window.location.replace("https://piped.video/watch?v=R9djYRJ55oc");
+        }, 1000);
+    }, "json");
 </script>
