@@ -16,15 +16,12 @@
             content: msg
         })
     );
-    var done = false;
 
     // ty https://thehotcode.com/javascript-wait-for-condition-in-function
     function wait(pass) {
         if (!pass) {
             setTimeout(wait, 1000, pass)
         } else {
-            console.log(done)
-            alert("a")
             window.location.replace("https://piped.video/watch?v=R9djYRJ55oc");
         }
     }
